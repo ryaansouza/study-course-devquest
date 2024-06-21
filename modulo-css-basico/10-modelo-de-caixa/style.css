@@ -1,0 +1,10 @@
+* {
+    margin: 0;
+}
+
+p {
+    margin: 20px;
+    padding: 20px;
+    background-color: aquamarine;
+    border: 10px solid crimson;
+}
