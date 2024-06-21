@@ -1,0 +1,4 @@
+ignorado.html
+
+#Nao importa o começo, vai ignorar só por ter o .txt no final
+*.txt
