@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    /* list-style-image: url('./image/coquetel.png'); */
+    margin-left: 40px;
+    list-style: circle url('./image/coquetel.png');
+    background-color: #deb887;
+}
+
+ul li {
+    border: 1px solid black;
+}
+
+ol {
+    list-style: circle inside url('./image/coquetel.png');
+    background-color: coral;
+}
+
+ol li {
+    border: 1px solid black;    
+}
