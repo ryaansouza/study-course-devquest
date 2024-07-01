@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens responsivas usando a tag picture!</title>
+</head>
+<body>
+    <h1>Picture com mobile first</h1>
+
+    <picture>
+        <source media="(min-width: 1114px)" srcset="https://placehold.co/1020">
+        <source media="(min-width: 768px)" srcset="https://placehold.co/680">
+        <source media="(min-width: 465px)" srcset="https://placehold.co/420">
+
+        <img src="https://placehold.co/300" alt="placeholder 300x300">
+    </picture>
+
+    <!-- <h1>Picture com desktop first</h1>
+
+    <picture>
+        <source media="(max-width: 375px)" srcset="https://placehold.co/200">
+        <source media="(max-width: 600px)" srcset="https://placehold.co/350">
+        <source media="(max-width: 800px)" srcset="https://placehold.co/500">
+        <source media="(max-width: 1020px)" srcset="https://placehold.co/720">
+        <img src="https://placehold.co/996" alt="placeholder 1200x1200">
+    </picture> -->
+</body>
+</html>
