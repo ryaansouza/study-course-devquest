@@ -1,0 +1,12 @@
+.container {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.container .item {
+    background-color: aqua;
+    color: red;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
