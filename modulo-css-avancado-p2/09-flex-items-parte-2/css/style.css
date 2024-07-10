@@ -1,0 +1,15 @@
+.flex-0 {
+    /* flex-grow, flex-shrink, flex-basis */
+    flex: 0;
+}
+
+.flex-1 {
+    /* flex-grow, flex-shrink, flex-basis */
+    flex: 0 1 100px;
+}
+
+.flex {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+}
