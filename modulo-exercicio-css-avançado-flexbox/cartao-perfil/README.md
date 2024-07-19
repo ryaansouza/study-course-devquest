@@ -1,4 +1,4 @@
-# 🌟Exercicio Cartão Perfil
+# 🌟Frontend Mentor | Profile card component
 
 ### ✨Descrição da tarefa:
 

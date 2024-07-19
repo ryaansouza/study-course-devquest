@@ -1,80 +1,68 @@
 body {
-    background-color: hsl(185, 75%, 39%);
-    font-weight: 400;
-    color: hsl(227, 10%, 46%);
+    background-color: var(--background-color);
     font-family: "Kumbh Sans", sans-serif;
+    height: 100vh;
 }
 
-main {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.container-cartao {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #fff;
-    height: 350px;
-    width: 320px;
-    border-radius: 2%;
-}
-
-.apresentacao-perfil {
+hr {
     width: 100%;
+}
+
+.container {
     height: 100%;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 20px;
-    margin: 30px 0;
+    justify-content: center;
 }
 
-.foto-perfil {
-    text-align: center;
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    gap: 25px;
+    border-radius: 10px;
+    height: 350px;
+    width: 320px;
+    margin: 20px;
 }
-.foto-perfil img {
+
+.profile-informations {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+    height: 100%;
+    margin-top: 28px;
+}
+
+.profile-informations img {
     width: 112px;
     border-radius: 50%;
 }
 
-.identidade p {
-    color: #000;
-    font-weight: 700;
-}
-.identidade span {
-    color: hsl(227, 10%, 46%);
-}
-
-.informacoes-perfil {
-    width: 100%;
-    height: 100%;
+.profile-numbers {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 30px;
-    border-top: 1px solid hsl(227, 10%, 46%);
+    justify-content: space-evenly;
+    width: 100%;
+    margin-bottom: 28px;
 }
 
-.informacoes-perfil div {
+.profile-numbers .info {
     text-align: center;
 }
 
-.informacoes-perfil .quantidade {
+.profile-informations p,
+.profile-informations .age,
+.profile-numbers .info .amount {
     font-weight: 700;
-    color: #000;
 }
 
-@media (max-width: 350px) {
-    .container-cartao {
-        width: 300px;
-    }
-}
-@media (max-width: 320px) {
-    .container-cartao {
-        width: 260px;
-    }
+.profile-informations .age,
+.profile-informations .city,
+.profile-numbers .info .amount-type {
+    color: var(--text-color);
 }

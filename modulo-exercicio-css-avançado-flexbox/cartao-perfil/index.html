@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cartão de Perfil</title>
+    <title>Frontend Mentor | Profile card component</title>
     
     <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/variables.css">
     <link rel="stylesheet" href="./src/css/style.css">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,34 +14,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <main>
-        <div class="container-cartao">
-            
-            <div class="apresentacao-perfil">
-                <div class="foto-perfil">
-                    <img src="./src/img/Victor-Crest.png" alt="foto de perfil">
-                </div>
-                <div class="identidade">
-                    <p>Victor Crest <span class="idade">26</span></p>
-                </div>
-                <p class="cidade">London</p>
+    <main class="container">
+        <div class="card">
+            <div class="profile-informations">
+                <img src="./src/img/Victor-Crest.png" alt="Profile picture image">
+                <p>Victor Crest <span class="age">26</span></p>
+                <span class="city">London</span>
             </div>
-
-            <div class="informacoes-perfil">
-                <div class="seguidores">
-                    <p class="quantidade">80K</p>
-                    <p>Followers</p>
+            <hr>
+            <div class="profile-numbers">
+                <div class="info">
+                    <p class="amount">80K</p>
+                    <span class="amount-type">Followers</span>
                 </div>
-                <div class="gostei">
-                    <p class="quantidade">803K</p>
-                    <p>Likes</p>
+                <div class="info">
+                    <p class="amount">803K</p>
+                    <span class="amount-type">Likes</span>
                 </div>
-                <div class="fotos">
-                    <p class="quantidade">1.4K</p>
-                    <p>Photos</p>
+                <div class="info">
+                    <p class="amount">1.4K</p>
+                    <span class="amount-type">Photos</span>
                 </div>
             </div>
-        
         </div>
     </main>
 </body>
