@@ -1,2 +1,64 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
 
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: "Manrope", sans-serif;
+    height: 100vh;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--card-color);
+    border-radius: 20px;
+    height: 300px;
+    width: 500px;
+    padding: 35px;
+}
+
+.number-advice {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: var(--secundary-color);
+}
+
+.advice {
+    font-size: 26px;
+    text-align: center;
+}
+
+.division {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+.division hr {
+    flex: 1;
+}
+
+.button-advice {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--secundary-color);
+}
+
+.button-advice i {
+    font-size: 24px;
+    color: #000;
+}
