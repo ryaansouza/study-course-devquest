@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "Public Sans", sans-serif;
+    font-weight: 400;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 45px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.logo span {
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    height: 42px;
+}
+
+.menu a {
+    color: #000;
+    font-size: 15px;
+    padding: 10px 6px;
+}
+
+.cadastre-se {
+    height: 100%;
+    width: 127px;
+    background-color: #5BC241;
+    font-weight: 300;
+    color: #fff;
+    border-radius: 10px;
+    border: 0;
+    padding: 10px 20px;
+}
+
+a:hover {
+    background-color: #5BC241;
+    transition: 0.5s;
+    color: #fff;
+}
+
+@media (max-width: 750px){
+    header {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 375px){
+    header {
+        flex-direction: column;
+    }
+
+    .logo span {
+        font-size: 40px;
+    }
+
+    .menu {
+        flex-direction: column;
+        width: 210px;
+        margin-top: 60px;
+    }
+
+    .menu a {
+        width: 100%;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .cadastre-se {
+        width: 150px;
+        height: 55px;
+    }
+}
