@@ -1,12 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+html {
+    /* tranforma o font size padrão que era 16px, para 10px */
+    font-size: 62.5%;
+}
+
 body {
     font-family: "Public Sans", sans-serif;
     font-weight: 400;
     height: 100vh;
 }
 
-header {
+.header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -21,68 +26,31 @@ header {
 
 .logo span {
     font-weight: 800;
-    font-size: 20px;
+    font-size: 2rem;
 }
 
 .menu {
     display: flex;
     align-items: center;
-    gap: 18px;
-    height: 42px;
 }
 
-.menu a {
-    color: #000;
-    font-size: 15px;
-    padding: 10px 6px;
+.menu li a {
+    font-size: 1.5rem;
+    padding: 10px 5px;
+    transition: 0.3s ease-in-out;
+    margin-left: 1.5rem;
 }
 
-.cadastre-se {
-    height: 100%;
-    width: 127px;
+.menu li a:hover {
     background-color: #5BC241;
+    color: #ffffff;
+}
+
+.menu li a.btn {
+    background-color: #5BC241;
+    border-radius: 10px;
     font-weight: 300;
     color: #fff;
-    border-radius: 10px;
-    border: 0;
-    padding: 10px 20px;
-}
-
-a:hover {
-    background-color: #5BC241;
-    transition: 0.5s;
-    color: #fff;
-}
-
-@media (max-width: 750px){
-    header {
-        flex-direction: column;
-    }
-}
-
-@media (max-width: 375px){
-    header {
-        flex-direction: column;
-    }
-
-    .logo span {
-        font-size: 40px;
-    }
-
-    .menu {
-        flex-direction: column;
-        width: 210px;
-        margin-top: 60px;
-    }
-
-    .menu a {
-        width: 100%;
-        font-size: 40px;
-        text-align: center;
-    }
-
-    .cadastre-se {
-        width: 150px;
-        height: 55px;
-    }
+    margin-left: 2rem;
+    padding: 1rem 2rem;
 }

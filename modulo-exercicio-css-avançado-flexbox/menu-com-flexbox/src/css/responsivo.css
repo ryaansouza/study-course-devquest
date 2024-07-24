@@ -1,0 +1,35 @@
+@media (max-width: 750px){
+    .header {
+        flex-direction: column;
+    }
+
+    .logo span {
+        font-size: 4rem;
+    }
+
+    .menu {
+        flex-direction: column;
+        margin-top: 40px;
+    }
+
+    .menu li {
+        text-align: center;
+        padding: 33px
+    }
+
+    .menu li:last-child{
+        margin-top: 20px;
+    }
+
+    .menu li a {
+        font-size: 4rem;
+        padding: 18px 40px;
+        margin-left: 0;
+    }
+
+    .menu li a.btn {
+        font-size: 1.8rem;
+        padding: 15px 23px;
+        margin-left: 0;
+    }
+}
