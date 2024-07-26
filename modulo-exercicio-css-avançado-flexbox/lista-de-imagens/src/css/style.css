@@ -7,19 +7,24 @@ html {
 body {
     font-family: "Public Sans", sans-serif;
     color: #fff;
+    min-height: 100vh;
+}
+
+main {
+    min-height: 100%;
 }
 
 .container {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    justify-content: center;
-    /* gap: 20px; */
+    justify-content: space-evenly;
+    /* height: 100%; */
 }
 
 .obra {
     position: relative;
-    padding: 20px;
+    /* padding: 20px; */
 }
 
 .informacoes {
