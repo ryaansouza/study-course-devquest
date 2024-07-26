@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Public Sans", sans-serif;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    /* gap: 20px; */
+}
+
+.obra {
+    position: relative;
+    padding: 20px;
+}
+
+.informacoes {
+    position: absolute;
+    bottom: 43px;
+    left: 26px;
+}
+
+.informacoes h2 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.informacoes h3 {
+    font-size: 17px;
+    font-weight: 300;
+}
