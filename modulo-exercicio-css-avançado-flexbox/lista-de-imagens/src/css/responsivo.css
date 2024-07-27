@@ -1,0 +1,12 @@
+@media (max-width:1420px) {
+
+    .container-obras {
+        max-width: 900px;
+        margin: 45px 0;
+        gap: 20px;
+    }
+
+    .obra {
+        padding: 0;
+    }
+}

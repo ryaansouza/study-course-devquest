@@ -7,38 +7,45 @@ html {
 body {
     font-family: "Public Sans", sans-serif;
     color: #fff;
-    min-height: 100vh;
 }
 
 main {
-    min-height: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.container {
+.container-obras {
     display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: space-evenly;
-    /* height: 100%; */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
 .obra {
+    width: 335px;
+    height: 431px;
     position: relative;
-    /* padding: 20px; */
 }
 
-.informacoes {
+.container-obras .obra img {
+    width: 100%;
+}
+
+.container-obras .obra .informacoes {
     position: absolute;
     bottom: 43px;
     left: 26px;
 }
 
-.informacoes h2 {
+.container-obras .obra .informacoes h2 {
     font-size: 30px;
+    margin-bottom: 8px;
     font-weight: 700;
 }
 
-.informacoes h3 {
+.container-obras .obra .informacoes h3 {
     font-size: 17px;
     font-weight: 300;
 }
