@@ -1,82 +1,60 @@
-body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+html {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
 }
 
-
-.main {
+.container {
+    background-color: #F7F7F7;
+    max-width: 900px;
     display: grid;
-    grid: 
-    "conteudo propaganda" 140px
-    "conteudo videos" auto
-    / 850px 402px;
-    
+    grid-template-areas: "video-destaque propaganda"
+                         "video-destaque videos-recomendados";
+    grid-template-columns: 1fr 270px;
+    grid-template-rows: 56px 1fr;
     justify-content: center;
-    gap: 10px;
-    padding: 38px 0;
+    gap: 20px;
+    padding: 38px 35px;
 }
 
-.container-conteudo {
-    grid-area: conteudo;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+.video-destaque {
+    grid-area: video-destaque;
 }
 
-.container-conteudo img {
-    border-radius: 8px;
+.video-destaque img {
+    width: 100%;
+    margin-bottom: 12px;
 }
 
-.container-conteudo h1 {
-    font-size: 2rem;
-    font-weight: 700;
-    margin: 0;
+.video-destaque .informacoes h1 {
+    font-size: 18px;
+    margin-bottom: 7px;
 }
 
-.container-conteudo p {
-    margin: 0;
-    font-size: 1.2rem;
+.video-destaque .informacoes .visualizacoes {
+    font-size: 14px;
+    margin-bottom: 9px;
 }
 
-.container-propaganda {
+.propaganda {
     grid-area: propaganda;
 }
 
-.container-propaganda img {
-    border-radius: 8px;
+.videos-recomendados{
+    grid-area: videos-recomendados;
 }
 
-.container-videos-recomendados{
-    grid-area: videos;
-}
-
-.container-videos-recomendados {
+.video {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
+    gap: 4px;
+    margin-bottom: 15px;
 }
 
-.video-recomendado {
-    display: flex;
-    gap: 10px;
-}
-
-.video-recomendado img {
-    border-radius: 5px;
-}
-
-.video-recomendado .informacoes {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-.video-recomendado .informacoes strong {
-    font-size: 1.2rem;
-}
-.video-recomendado .informacoes span {
+.video .informacoes h2 {
     font-size: 14px;
+    margin-bottom: 7px;
+}
+
+.video .informacoes p {
+    font-size: 11px;
+    margin-bottom: 5px;
 }
