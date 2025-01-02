@@ -15,12 +15,12 @@ frutas.unshift('morango')
 //Procura o index do item no array
 let posicaoLaranja = frutas.indexOf('laranja')
 
-// for (let i = 0; i < frutasTamanho; i++) {
-//     console.log('Fruta: ' + frutas[i]);
-// }
+for (let i = 0; i < frutasTamanho; i++) {
+    console.log('Fruta: ' + frutas[i]);
+}
 
-// frutas.forEach(function(indice, item, array) {
-//     console.log(item);
-//     console.log(indice);
-//     console.log(array);
-// });
+frutas.forEach(function(indice, item, array) {
+    console.log(item);
+    console.log(indice);
+    console.log(array);
+});
