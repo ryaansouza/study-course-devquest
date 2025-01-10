@@ -1,6 +1,6 @@
-let quadradoFlexivel = document.getElementsByClassName('quadrado');
+const quadradoFlexivel = document.getElementsByClassName('quadrado');
 
-let trocaCor = document.getElementById('troca-cor').addEventListener("click", function() {
+const trocaCor = document.getElementById('troca-cor').addEventListener("click", function() {
     
     if(quadradoFlexivel[0].classList[1] === 'azul'){
         quadradoFlexivel[0].classList.remove('azul');
