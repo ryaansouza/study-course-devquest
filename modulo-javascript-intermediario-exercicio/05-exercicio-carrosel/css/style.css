@@ -1,0 +1,29 @@
+body {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    background-image: url(../img/imagem1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 70px;
+}
+
+.seta-esquerda {
+    transform: scaleX(-1);
+}
+
+.cartao {
+    position:absolute;
+    background-color: #fff;
+    width: 620px;
+    min-height: 700px;
+    display: flex;
+    flex-direction: column;
+    padding: 65px 60px;
+    margin-left: 110px;
+    border-radius: 10px;
+}
